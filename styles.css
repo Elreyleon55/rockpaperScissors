@@ -1,0 +1,288 @@
+
+
+.body {
+  background-color: blanchedalmond;
+
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 2px black;
+  animation: 0.5s ease forwards 2.5s fill;  
+}
+
+.container-loading-screen {
+position: fixed;
+inset: 0;
+z-index: 999;
+}
+
+
+
+/* transition not being used */
+/* css version */
+/* .container-loading-screen {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container-typewriter-text {
+  opacity: 0;
+  transform: translate3d(0, -1rem, 0);
+}
+.container-typewriter-text {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+} */
+
+
+
+
+.logo {
+  padding-bottom: 2rem;
+  
+}
+
+.under-line{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.under-line path {
+  stroke-dashoffset: 3000px;
+  stroke-dasharray: 3000px;
+  animation: line-sex 2s ease forwards 2.5s ;
+}
+
+
+.logo path:nth-child(0) {
+stroke-dasharray: 78.9px;
+stroke-dashoffset: 78.9px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(1) {
+stroke-dasharray: 407.2px;
+stroke-dashoffset: 407.2px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(2) {
+stroke-dasharray: 408.2px;
+stroke-dashoffset: 408.2px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(3) {
+stroke-dasharray: 408.5px;
+stroke-dashoffset: 408.5px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(4) {
+stroke-dasharray: 446.8px;
+stroke-dashoffset: 446.8px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(5) {
+stroke-dasharray: 446.8px;
+stroke-dashoffset: 446.8px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(6) {
+stroke-dasharray: 446.9px;
+stroke-dashoffset: 446.9px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(7) {
+stroke-dasharray: 407.2px;
+stroke-dashoffset: 407.2px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(8) {
+stroke-dasharray: 435.1px;
+stroke-dashoffset: 435.1px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(9) {
+stroke-dasharray: 401.9px;
+stroke-dashoffset: 401.9px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(10) {
+stroke-dasharray: 600px;
+stroke-dashoffset: 600px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(11) {
+stroke-dasharray: 530.9px;
+stroke-dashoffset: 530.9px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(12) {
+stroke-dasharray: 489.3px;
+stroke-dashoffset: 489.3px;
+animation: line-anim 3s ease forwards;
+}
+.logo path:nth-child(13) {
+stroke-dasharray: 477.3px;
+stroke-dashoffset: 477.3px;
+animation: line-anim 3s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+    
+  }
+  to {
+    fill: rgb(0, 0, 0);
+    
+    filter: drop-shadow(2px 10px 1px rgb(0 0 0 / 0.4));
+}
+  }
+
+  @keyframes line-sex {
+    from {
+      fill: transparent;
+    }
+    to {
+      stroke-dashoffset: 0%;
+      fill: black
+    }
+  }
+
+
+
+
+  /* this is for the name index page HTML */
+  .container-typewriter-text {
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 100vh;
+    
+  }
+  .container-typewriter {
+    display: inline-block;
+    
+  }
+  
+
+  .text-typewriter {
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 2s steps(25),
+    cursor .4s step-end infinite alternate;
+  }
+
+  /* curser blinbking */
+  @keyframes cursor {
+    50% {border-color: transparent;}
+  
+  }
+
+  @keyframes typing {
+    from {width: 0;}
+  }
+
+/* this is for greting text */
+
+.container-typewriter2 {
+  display: inline-block;
+ 
+
+}
+
+.text-typewriter2 {
+  font-size: 5em;
+  letter-spacing: 10px;
+  font-family: monospace;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+  typingp 2s steps(25),
+  cursorp .4s step-end infinite alternate;
+}
+
+/* curser blinbking */
+@keyframes cursorp {
+  50% {border-color: transparent;}
+
+}
+
+@keyframes typingp {
+  from {width: 0;}
+}
+ 
+/* styles for the text to wrap*/
+
+.text-typewriter2 {
+  /* overflow-wrap: break-word; */
+  text-wrap: wrap;
+
+}
+
+.container-typewriter-text {
+  width: 100%;
+  margin: 0 auto;
+ padding-left: 30rem;
+ padding-top: 10rem;
+  overflow-wrap: break-word;
+}
+
+
+/* style for button and box */
+
+.input-information {
+  /* padding: 4rem; */
+  /* font-size: 16px; */
+  height: 4rem;
+  /* font: 400px; */
+  font-size: 2.5rem;
+  text-decoration: none;
+  border: 4px solid black;
+  border-radius: 5px;
+  width: 35rem;
+}
+.input-information::placeholder {
+
+  font-size: 2.5rem;
+  align-items: center;
+  
+}
+
+.enter-button {
+background-color: black;
+color: aliceblue;
+width: 10rem;
+height: 4rem;
+font-size: 2rem;
+border-radius: 5px;
+font-weight: 500;
+text-transform: uppercase;
+margin-left: 2rem;
+
+}
+
+.enter-infomation {
+  display: flex;
+  align-items: center;
+    border-radius: 14px;
+}
+
+
