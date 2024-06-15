@@ -4,8 +4,12 @@ const enterButton = document.querySelector(".enter-button")
 //inner html
 const innerHtml2 = document.querySelector(".text-typewriter2");
 
+// pick players
+const pickPlayerContainer = document.querySelector(".pick-players");
 
 //activate button
+// hide my players
+pickPlayerContainer.style.display = "none";
 
 enterButton.addEventListener("click", () => {
   console.log(informationInput.value)
@@ -14,7 +18,6 @@ enterButton.addEventListener("click", () => {
   What a beautiful name.
   If you have freinds click two players, if not click one player`;
   typeWriter(innerHtml2, message, 100);
-
 })
 
 function typeWriter(element, text, speed) {
@@ -25,9 +28,13 @@ function typeWriter(element, text, speed) {
       element.innerHTML += text.charAt(i);
       i++;
       setTimeout(type, speed);
+    
+    } else {
+      pickPlayerContainer.style.display = "block";
     }
   }
   type();
+  
 }
 
 

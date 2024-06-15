@@ -183,6 +183,8 @@ animation: line-anim 3s ease forwards;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
+    /* text-wrap: wrap; */
+    /* line-height: 2; */
     animation: 
     typing 2s steps(25),
     cursor .4s step-end infinite alternate;
@@ -217,6 +219,9 @@ animation: line-anim 3s ease forwards;
   animation: 
   typingp 2s steps(25),
   cursorp .4s step-end infinite alternate;
+  line-height: 2;
+  text-wrap: wrap;
+  width: 80vw;
 }
 
 /* curser blinbking */
@@ -231,15 +236,11 @@ animation: line-anim 3s ease forwards;
  
 /* styles for the text to wrap*/
 
-.text-typewriter2 {
-  /* overflow-wrap: break-word; */
-  text-wrap: wrap;
 
-}
 
 .container-typewriter-text {
-  width: 100%;
-  margin: 0 auto;
+width: 100%;
+margin: 0 auto;
  padding-left: 30rem;
  padding-top: 10rem;
   overflow-wrap: break-word;
@@ -285,4 +286,17 @@ margin-left: 2rem;
     border-radius: 14px;
 }
 
+/* style for player butto */
+
+.container-flex {
+  display: flex;
+}
+
+.pick-players img {
+padding: 2rem;
+
+}
+.pick-players img:hover {
+  transform: translate3d(3px);
+}
 

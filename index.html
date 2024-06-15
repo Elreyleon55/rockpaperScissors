@@ -103,18 +103,77 @@
     </div>
 
     <!-- the end of loading screen -->
-    <div class="container-typewriter-text">
-      <div class="container-typewriter">
-        <p class="text-typewriter">Hello, what is your name?</p>
+    <div class="close-screen">
+      <div class="container-typewriter-text">
+        <div class="container-typewriter">
+          <p class="text-typewriter">Hello, what is your name?</p>
+        </div>
+        <div class="enter-infomation">
+          <input
+            class="input-information"
+            type="text"
+            placeholder="Your Name"
+          />
+          <button class="enter-button">Enter</button>
+        </div>
+        <div class="container-typewriter2">
+          <p class="text-typewriter2"></p>
+        </div>
+        <section class="pick-players">
+          <div class="container-flex">
+            <div class="player-select-btn player-one">
+              <img src="images/Player-one.png" alt="" />
+            </div>
+            <div class="player-select-btn player-two">
+              <img src="images/Player-two.png" alt="" />
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="enter-infomation">
-        <input class="input-information" type="text" placeholder="Your Name" />
-        <button class="enter-button">Enter</button>
-      </div>
-      <div class="container-typewriter2">
-        <p class="text-typewriter2"></p>
-      </div>
-      <div class="start-game-button">link</div>
     </div>
+    <!-- Rockpapersciccors one player -->
+    <section class="player-one">
+      <div class="start-game-one-player">
+        <button
+          class="game-buttons"
+          onclick="
+              playGame('rock');
+            "
+        >
+          Rock
+        </button>
+
+        <button
+          class="game-buttons"
+          onclick="
+              playGame('paper');
+            "
+        >
+          Paper
+        </button>
+
+        <button
+          class="game-buttons"
+          onclick="
+              playGame('scissors')
+            "
+        >
+          Scissors
+        </button>
+
+        <div class="paragraphs-result">
+          <p class="result-of-answers"></p>
+          <p class="result-of-game"></p>
+          <p class="result-of-score"></p>
+        </div>
+        <button
+          onclick="
+          resetButton()
+          "
+        >
+          reset score
+        </button>
+      </div>
+    </section>
   </body>
 </html>
