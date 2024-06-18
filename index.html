@@ -134,45 +134,53 @@
     <!-- Rockpapersciccors one player -->
     <section class="player-one">
       <div class="start-game-one-player">
-        <button
-          class="game-buttons"
-          onclick="
-              playGame('rock');
-            "
-        >
-          Rock
-        </button>
+        <div class="container-flex-buttons">
+          <button
+            class="game-buttons .top-rock"
+            onclick="
+                playGame('rock');
+              "
+          >
+            <img src="images/rock.png" alt="A PICTURE OF rock as a hand form" />
+          </button>
 
-        <button
-          class="game-buttons"
-          onclick="
-              playGame('paper');
-            "
-        >
-          Paper
-        </button>
+          <button
+            class="game-buttons"
+            onclick="
+                playGame('paper');
+              "
+          >
+            <img
+              src="images/paper.png"
+              alt="A PICTURE OF paper as a hand form"
+            />
+          </button>
 
-        <button
-          class="game-buttons"
-          onclick="
-              playGame('scissors')
-            "
-        >
-          Scissors
-        </button>
+          <button
+            class="game-buttons"
+            onclick="
+                playGame('scissors')
+              "
+          >
+            <img
+              src="images/scissors.png"
+              alt="A PICTURE OF Sciccors as a hand form"
+            />
+          </button>
 
-        <div class="paragraphs-result">
-          <p class="result-of-answers"></p>
-          <p class="result-of-game"></p>
-          <p class="result-of-score"></p>
+          <div class="paragraphs-result">
+            <p class="result-of-answers"></p>
+            <p class="result-of-game"></p>
+            <p class="result-of-score"></p>
+          </div>
+          <button
+            onclick="
+            resetButton()
+            "
+          >
+            reset score
+          </button>
         </div>
-        <button
-          onclick="
-          resetButton()
-          "
-        >
-          reset score
-        </button>
       </div>
     </section>
   </body>

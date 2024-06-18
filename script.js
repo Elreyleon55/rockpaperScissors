@@ -25,31 +25,17 @@ const enterButton2 = document.querySelector(".enter-button");
 
 // pick payers class
 
-
-
-
 const textwriterAnimation = document.querySelector(".text-typewriter");
-
-//  window.addEventListener("load", ()=> {
-//   loaderScreen.classList.add('hidden');
-//   typeWriterScreen.classList.add('visible');
-//  })
-
-// hide players
-
 
 
 document.addEventListener('DOMContentLoaded', ()=> {
   loaderScreen.addEventListener('animationend', ()=>{
     loaderScreen.style.display = 'none';
-    // typeWriterScreen.style.display = 'block';
-    // typeWriterScreen.classList.add('visible');
     textWriterText.style.display = "block";
   })
 })
 
-
-// hide text aquare
+// hide text square
 
 textSquare.style.display = "none"
 enterButton2.style.display = "none"
@@ -59,8 +45,6 @@ textwriterAnimation.addEventListener('animationend', () =>{
   textSquare.style.display = "block"
   enterButton2.style.display = "block"
 })
-
-
 
 // picking one player or two
 
@@ -226,15 +210,7 @@ gameButtons.forEach((activate) => {
     );
   });
 });
-// } else if (computerMove === "paper" && playerMove === "paper") {
-//   result = "you tie";
-// } else if (computerMove === "scissors" && playerMove === "rock") {
-//   result = "you win";
-// }
-//   alert(
-//     `You picked ${playerMove}. Computer picked ${computerMove}. You ${result}.`
-//   );
-// }
+
 
 console.log(result);
 

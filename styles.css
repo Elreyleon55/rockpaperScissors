@@ -2,7 +2,6 @@
 
 .body {
   background-color: blanchedalmond;
-
 }
 
 .logo {
@@ -204,8 +203,6 @@ animation: line-anim 3s ease forwards;
 
 .container-typewriter2 {
   display: inline-block;
- 
-
 }
 
 .text-typewriter2 {
@@ -300,3 +297,31 @@ padding: 2rem;
   transform: translate3d(3px);
 }
 
+/* background for player one */
+.player-one {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffebcd;
+
+}
+
+
+/* for buttons */
+.game-buttons {
+  background-color: #ffebcd
+  ;
+  border: none;
+  margin-top: 0.7rem;
+  border: 1px solid black;
+
+}
+.game-buttons .top-buttons {
+  margin-top: 2rem;
+}
+
+
+.container-flex-buttons {
+  display: grid;
+  grid-template-columns:1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+}
